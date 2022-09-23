@@ -1,0 +1,61 @@
+body {
+    width: 100%;
+    display: flex;
+    font-size: 62.5%;
+    justify-content: space-between;
+
+}
+
+#navbar {
+    display: flex;
+    width: 25%;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    flex-direction: column;
+
+    align-items: flex-start;
+    height: 100vh;
+    overflow: hidden;
+    border-collapse: collapse;
+
+}
+
+#navbar header {
+    text-align: center;
+    margin: 25px 0;
+    padding-left: 1.5rem;
+
+    font-size: 2rem;
+
+}
+
+#navbar a {
+    text-decoration: none;
+    width: 100%;
+    color: rgba(120, 120, 120);
+    padding: 15px 0;
+    padding-left: 1.5rem;
+    border: 0.5px solid gray;
+}
+
+
+
+#main-doc {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    border-collapse: collapse;
+    width: 74%;
+}
+
+#main-doc section {
+    padding: 10px 2rem;
+}
+
+section header {
+    font-size: 2rem;
+}
+
+p,
+ul {
+    color: rgb(120, 120, 120);
+}
