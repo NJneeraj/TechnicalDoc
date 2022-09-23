@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<main id="main-doc">
+    <nav id="navbar">
+        <header>C# Documentation</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#.NET" class="nav-link">.NET</a>
+        <a href="#Hello_world" class="nav-link">Hello World</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Declaring_variables" class="nav-link">Declaring Variables</a>
+        <a href="#Variable_scope" class="nav-link">Variable Scope</a>
+        <a href="#Constants" class="nav-link">Constants</a>
+        <a href="#if-else" class="nav-link">if-else</a>
+        <a href="#While_loop" class="nav-link">While loop</a>
+        <a href="#Functions" class="nav-link">Functions</a>
+        <a href="#Classes" class="nav-link">Classes</a>
+        <a href="#Objects" class="nav-link">Objects</a>
+        <a href="#C#_reference" class="nav-link">C# reference</a>
+    </nav>
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>C# is a modern, object-oriented, and type-safe programming language. C# enables
+            developers to build many types of secure and robust applications that run in .NET. C# has its roots in the C
+            family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour
+            provides an overview of the major components of the language in C# 8 and earlier. If you want to explore the
+            language through interactive examples, try the </p>
+        <p>C# emphasizes versioning to ensure programs and libraries can evolve over time in a compatible manner.
+            Aspects of C#'s design that were directly influenced by versioning considerations include the separate
+            <code>virtual</code> and <code>override</code> modifiers, the rules for method overload resolution, and
+            support for
+            explicit interface
+            member declarations.
+        </p>
+        <ul>
+            <li>C# is an object-oriented, component-oriented programming language. C# provides language constructs to
+                directly support these concepts, making C# a natural language in which to create and use software
+                components. </li>
+            <li>Several C# features help create robust and durable applications. Garbage collection automatically
+                reclaims memory occupied by unreachable unused objects.</li>
+        </ul>
+    </section>
+    <section class="main-section" id=".NET">
+        <header>.NET</header>
+        <p>C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a set of
+            class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an
+            international standard. The CLI is the basis for creating execution and development environments in which
+            languages and libraries work together seamlessly.</p>
+        <ul>
+            <li>Source code written in C# is compiled into an intermediate language (IL) that conforms to the CLI
+                specification.</li>
+            <li>Code that's executed by the CLR is sometimes referred to as "managed code." "Unmanaged code," is
+                compiled into native machine language that targets a specific platform.</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Hello_world">
+        <header>Hello World</header>
+        <p>The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:</p>
+        <p><code>using System;<br>
+
+            class Hello<br>
+            {<br>
+                static void Main()<br>
+                {<br>
+                    Console.WriteLine("Hello, World");<br>
+                }<br>
+            }</code></p>
+        <p>The output of the program is produced by the <code>WriteLine</code> method of the <code>Console</code> class
+            in
+            the <code>System</code> namespace.
+            This class is provided by the standard class libraries, which, by default, are automatically referenced by
+            the compiler.</p>
+    </section>
+    <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in
+            C# has a specific type, which determines the size and layout of the variable's memory the range of values
+            that can be stored within that memory and the set of operations that can be applied to the variable.</p>
+        <ul>
+            <li><b>Intergal</b>-byte,int,short,long,char</li>
+            <li><b>Floating</b>-float,double</li>
+            <li><b>Decimal</b>-decimal</li>
+            <li><b>Boolean</b>-true,false</li>
+            <li><b>Nullable</b>-nullable</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+        <header>Declaring variables</header>
+        <p>Syntax for variable definition in C# is −</p>
+        <p><code>&#60;datat_type&#62; &#60;variable_name&#62;</code></p>
+        <p>Here, data_type must be a valid C# data type , and variable_name may consist of one or more identifier names
+            separated by commas.</p>
+        <ul>Examples
+            <li>int i, j, k;</li>
+            <li>float price;</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <p>When you declare a variable outside of any function, it is called a global variable, because it is available
+            to any other code in the current document. When you declare a variable within a function, it is called a
+            local variable, because it is available only within that function.</p>
+
+        </ul>
+    </section>
+    <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <p>Constants are immutable values which are known at compile time and do not change for the life of the program.
+        </p>
+        <p> Constants are declared with the const modifier. Only the C# built-in types may be
+            declared as <code>const</code>. User-defined types, including classes, structs, and arrays, cannot be
+            <code>const</code>.
+        </p>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <section class="main-section" id="if-else">
+        <header>if-else</header>
+        <p>Use the if statement to specify a block of C# code to be executed if a condition is <code>True</code>.</p>
+        <div><code>if (condition) <br>  
+            { <br>
+              // block of code to be executed if the condition is True <br>
+            } <br>
+            else <br>
+            {<br>
+              // block of code to be executed if the condition is False <br>
+            }</code></div>
+    </section>
+    <section class="main-section" id="While_loop">
+        <header>While loop</header>
+        <p>The C# while loop continually executes a block of statements until a specified expression evaluates to false
+            . The expression is evaluated each time the loop is encountered and the evaluation result is true, the loop
+            body statements are executed.
+
+
+    </section>
+    <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p></p>
+
+
+    </section>
+    <section class="main-section" id="Classes">
+        <header>Classes</header>
+        <p></p>
+
+    </section>
+    <section class="main-section" id="Objects">
+        <header>Objects</header>
+        <p></p>
+
+    </section>
+    <section class="main-section" id="C#_reference">
+        <header>C# reference</header>
+        <ul>
+            <li>All the documentation in this page is taken from <a
+                    href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">Microsoft</a></li>
+        </ul>
+    </section>
+
+</main>
+
+<body>
+
+</body>
+
+</html>
