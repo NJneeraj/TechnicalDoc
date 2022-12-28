@@ -1,61 +1,114 @@
 body {
-    width: 100%;
-    display: flex;
-    font-size: 62.5%;
-    justify-content: space-between;
-
+  width: 100%;
+  display: flex;
+  font-size: 62.5%;
+  justify-content: space-between;
+  scroll-behavior: smooth;
 }
 
 #navbar {
-    display: flex;
-    width: 25%;
-    font-size: 1.5rem;
-    border: 1px solid black;
-    flex-direction: column;
-
-    align-items: flex-start;
-    height: 100vh;
-    overflow: hidden;
-    border-collapse: collapse;
-
+  display: flex;
+  width: 25%;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
+  overflow: hidden;
+  border-collapse: collapse;
 }
 
 #navbar header {
-    text-align: center;
-    margin: 25px 0;
-    padding-left: 1.5rem;
-
-    font-size: 2rem;
-
+  text-align: center;
+  margin: 25px 0;
+  padding-left: 1.5rem;
+  color: #595966;
+  font-size: 2rem;
 }
 
 #navbar a {
-    text-decoration: none;
-    width: 100%;
-    color: rgba(120, 120, 120);
-    padding: 15px 0;
-    padding-left: 1.5rem;
-    border: 0.5px solid gray;
+  text-decoration: none;
+  width: 100%;
+  color: rgba(120, 120, 120);
+  padding: 15px 0;
+  padding-left: 1.5rem;
+  border: 0.5px solid gray;
 }
 
-
-
 #main-doc {
-    border: 1px solid black;
-    font-size: 1.5rem;
-    border-collapse: collapse;
-    width: 74%;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  border-bottom: none;
+  border-collapse: collapse;
+  width: 74%;
 }
 
 #main-doc section {
-    padding: 10px 2rem;
+  padding: 10px 2rem;
 }
 
 section header {
-    font-size: 2rem;
+  font-size: 2rem;
+  color: #595966;
+  border-bottom: 1px solid grey;
+  margin: 1rem 1.2rem;
+  padding: 1rem;
+}
+
+code {
+  color: rgb(78, 77, 75);
 }
 
 p,
 ul {
-    color: rgb(120, 120, 120);
+  color: rgb(120, 120, 120);
+  margin: 1rem 1.2rem;
+  padding: 1rem;
+}
+
+ul {
+  margin: 1rem 1.2rem;
+  padding: 1rem 3rem;
+}
+
+section div {
+  background-color: #ddddff;
+  max-width: 75%;
+  padding: 2rem;
+}
+
+@media (min-width: 300px) and (max-width: 640px) {
+  body {
+    flex-direction: column;
+  }
+  #navbar {
+    font-size: 0.8rem;
+    width: 95%;
+  }
+  #navbar a:last-child {
+    border-bottom: 0px;
+  }
+  section div {
+    max-width: 100%;
+  }
+  #main-doc {
+    font-size: 0.8rem;
+    width: 95%;
+    border-top: 0px;
+  }
+  #main-doc section {
+    padding: 0px;
+  }
+  p,
+  ul {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 5px;
+  }
+  ul {
+    padding-left: 10%;
+  }
+  section header {
+    font-size: 1.5rem;
+  }
 }
